@@ -1,4 +1,3 @@
 # floatynum
 
-I will add puzzles here over time.
-Each puzzle will have it's own quirk or theme. The language may vary. Some may be simple small CLI puzzles, others may have a UI, and some may involve breaking the puzzle to solve it.
+A little thing for me to do for practise where I will just throw idea's in the bucket. The challenge is to try and get 26 projects done to fill this, in a wide range of different things. 
