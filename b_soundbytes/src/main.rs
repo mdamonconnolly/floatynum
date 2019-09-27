@@ -29,13 +29,9 @@ fn compressor_node(threshold:i16, ratio:i16, mut &_byte_stream:[i16;64])
 fn blip(position:usize, magnitude:i16, Q:i16, mut byte_stream:&mut [i16;64])
 {
     byte_stream[position] = magnitude;
-    calculate_falloff(position, Q);
+    calculate_falloff(position, Q, byte_stream);
 
-}
-
-fn calculate_falloff(_position:usize, _Q:i16)
-{
-
+    //Calculate Falloff
 }
 
 //Main function with array stream.
