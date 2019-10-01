@@ -1,6 +1,7 @@
+use std::time::SystemTime;
+use std::time::Duration;
 
-
-//Prints it out as a graph.
+//TODO: Will this work with new update.
 fn update_display(byte_stream:&[i8;64])
 {
     for i in (0..10).rev() {
@@ -22,8 +23,20 @@ fn main() {
     //Test cases can change here.
     let mut stream:[i8;64] = [0;64];
 
-    blip(16, 4, &mut stream);
-    blip(38, 8, &mut stream);
+    let mut tick = SystemTime::now();
+
+    loop{  
+
+        let deltaTime = Duration::from_millis(1000);
+
+        if deltaTime.as_secs() >= tick
+        {
+            println!("LALALALA");
+        }
+
+        println!("{:?}", deltaTime.as_secs());
+        
+    }
 
     update_display(&stream);
 }
